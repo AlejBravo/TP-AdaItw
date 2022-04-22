@@ -1,0 +1,87 @@
+{
+	"info": {
+		"_postman_id": "8fb083a9-f6bd-4de3-bd59-7e312f345702",
+		"name": "Prueba postman TP",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Crear Concepto",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"idCapitulo\" : \"2\",\r\n    \"nombreConcepto\" : \"Declaración for\",\r\n    \"contenidoConcepto\" : \"El bucle for en java se usa para iterar y evaluar un código varias veces. Cuando el usuario conoce el número de iteraciones, se recomienda utilizar el bucle for.\",\r\n    \"numeroConcepto\" : \"8\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/concepto/crear",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"concepto",
+						"crear"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Lista de conceptos",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/concepto/conceptos",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"concepto",
+						"conceptos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar Concepto",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/concepto/eliminar/8",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"concepto",
+						"eliminar",
+						"8"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
